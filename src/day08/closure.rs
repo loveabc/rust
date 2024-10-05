@@ -1,4 +1,4 @@
-fn main() {
+fn test() {
     let mut initial_number = 50;
 
     //闭包可以捕获调用者作用域中的值, 这儿的闭包就是initial_number被捕获
@@ -61,12 +61,6 @@ impl Animal for Dog {
 
 //返回值Box里面有dyn
 fn test_trait() -> Box<dyn Animal> {
-    Box::new(Dog {
-
-    })
-}
-
-fn test_trait2() -> Box<dyn Animal> {
     Box::new(Dog {
 
     })
